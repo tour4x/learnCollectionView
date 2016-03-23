@@ -16,6 +16,7 @@
 		CE4A3DFD1CA2374600972066 /* learnColletionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DFC1CA2374600972066 /* learnColletionViewTests.m */; };
 		CE4A3E081CA2374600972066 /* learnColletionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3E071CA2374600972066 /* learnColletionViewUITests.m */; };
 		CE4A3E171CA247A500972066 /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3E161CA247A500972066 /* RAViewController.m */; };
+		CE4A3E1B1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3E1A1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		CE4A3E091CA2374600972066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4A3E151CA247A500972066 /* RAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
 		CE4A3E161CA247A500972066 /* RAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
+		CE4A3E191CA2758700972066 /* RACollectionVIewDelegateTripleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionVIewDelegateTripleLayout.h; sourceTree = "<group>"; };
+		CE4A3E1A1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionVIewDelegateTripleLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		CE4A3DD61CA2374600972066 = {
 			isa = PBXGroup;
 			children = (
+				CE4A3E181CA274FC00972066 /* RACollectionViewReorderTripletLayout */,
 				CE4A3DE11CA2374600972066 /* learnColletionView */,
 				CE4A3DFB1CA2374600972066 /* learnColletionViewTests */,
 				CE4A3E061CA2374600972066 /* learnColletionViewUITests */,
@@ -143,6 +147,15 @@
 				CE4A3E091CA2374600972066 /* Info.plist */,
 			);
 			path = learnColletionViewUITests;
+			sourceTree = "<group>";
+		};
+		CE4A3E181CA274FC00972066 /* RACollectionViewReorderTripletLayout */ = {
+			isa = PBXGroup;
+			children = (
+				CE4A3E191CA2758700972066 /* RACollectionVIewDelegateTripleLayout.h */,
+				CE4A3E1A1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m */,
+			);
+			path = RACollectionViewReorderTripletLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +290,7 @@
 			files = (
 				CE4A3DEA1CA2374600972066 /* ViewController.m in Sources */,
 				CE4A3DE71CA2374600972066 /* AppDelegate.m in Sources */,
+				CE4A3E1B1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m in Sources */,
 				CE4A3DE41CA2374600972066 /* main.m in Sources */,
 				CE4A3E171CA247A500972066 /* RAViewController.m in Sources */,
 			);
@@ -502,6 +516,7 @@
 				CE4A3E0E1CA2374600972066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4A3E0F1CA2374600972066 /* Build configuration list for PBXNativeTarget "learnColletionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +525,7 @@
 				CE4A3E111CA2374600972066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4A3E121CA2374600972066 /* Build configuration list for PBXNativeTarget "learnColletionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +534,7 @@
 				CE4A3E141CA2374600972066 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
