@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE03A0761CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03A0751CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m */; };
+		CE03A0791CA3CC9B00E273B6 /* RACollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03A0781CA3CC9B00E273B6 /* RACollectionViewCell.m */; };
 		CE4A3DE41CA2374600972066 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DE31CA2374600972066 /* main.m */; };
 		CE4A3DE71CA2374600972066 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DE61CA2374600972066 /* AppDelegate.m */; };
 		CE4A3DEA1CA2374600972066 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DE91CA2374600972066 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		CE03A0741CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RACollectionViewReorderableTripletLayout.h; path = ../RACollectionViewReorderableTripletLayout.h; sourceTree = "<group>"; };
 		CE03A0751CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RACollectionViewReorderableTripletLayout.m; path = ../RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
+		CE03A0771CA3CC9B00E273B6 /* RACollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewCell.h; sourceTree = "<group>"; };
+		CE03A0781CA3CC9B00E273B6 /* RACollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewCell.m; sourceTree = "<group>"; };
 		CE4A3DDF1CA2374600972066 /* learnColletionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnColletionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4A3DE31CA2374600972066 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE4A3DE51CA2374600972066 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 		CE4A3DE11CA2374600972066 /* learnColletionView */ = {
 			isa = PBXGroup;
 			children = (
+				CE03A0771CA3CC9B00E273B6 /* RACollectionViewCell.h */,
+				CE03A0781CA3CC9B00E273B6 /* RACollectionViewCell.m */,
 				CE4A3DE51CA2374600972066 /* AppDelegate.h */,
 				CE4A3DE61CA2374600972066 /* AppDelegate.m */,
 				CE4A3DE81CA2374600972066 /* ViewController.h */,
@@ -299,6 +304,7 @@
 				CE4A3E1B1CA2758700972066 /* RACollectionViewTripleLayout.m in Sources */,
 				CE4A3DE41CA2374600972066 /* main.m in Sources */,
 				CE4A3E171CA247A500972066 /* RAViewController.m in Sources */,
+				CE03A0791CA3CC9B00E273B6 /* RACollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
