@@ -18,7 +18,7 @@
 
 @end
 
-@interface RACollectionVIewDelegateTripleLayout : UICollectionViewLayout
+@interface RACollectionViewTripleLayout : UICollectionViewLayout
 
 @property (assign, nonatomic)id<RACollectionViewDelegateTripletLayout> delegate;
 @property (assign, nonatomic, readonly)CGSize largeCellSize;

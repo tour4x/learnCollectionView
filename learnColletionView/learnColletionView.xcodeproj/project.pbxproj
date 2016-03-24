@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE03A0761CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE03A0751CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m */; };
 		CE4A3DE41CA2374600972066 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DE31CA2374600972066 /* main.m */; };
 		CE4A3DE71CA2374600972066 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DE61CA2374600972066 /* AppDelegate.m */; };
 		CE4A3DEA1CA2374600972066 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DE91CA2374600972066 /* ViewController.m */; };
@@ -16,7 +17,7 @@
 		CE4A3DFD1CA2374600972066 /* learnColletionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3DFC1CA2374600972066 /* learnColletionViewTests.m */; };
 		CE4A3E081CA2374600972066 /* learnColletionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3E071CA2374600972066 /* learnColletionViewUITests.m */; };
 		CE4A3E171CA247A500972066 /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3E161CA247A500972066 /* RAViewController.m */; };
-		CE4A3E1B1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3E1A1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m */; };
+		CE4A3E1B1CA2758700972066 /* RACollectionViewTripleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A3E1A1CA2758700972066 /* RACollectionViewTripleLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE03A0741CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RACollectionViewReorderableTripletLayout.h; path = ../RACollectionViewReorderableTripletLayout.h; sourceTree = "<group>"; };
+		CE03A0751CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RACollectionViewReorderableTripletLayout.m; path = ../RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
 		CE4A3DDF1CA2374600972066 /* learnColletionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnColletionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4A3DE31CA2374600972066 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE4A3DE51CA2374600972066 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,8 +58,8 @@
 		CE4A3E091CA2374600972066 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4A3E151CA247A500972066 /* RAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
 		CE4A3E161CA247A500972066 /* RAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
-		CE4A3E191CA2758700972066 /* RACollectionVIewDelegateTripleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionVIewDelegateTripleLayout.h; sourceTree = "<group>"; };
-		CE4A3E1A1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionVIewDelegateTripleLayout.m; sourceTree = "<group>"; };
+		CE4A3E191CA2758700972066 /* RACollectionViewTripleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewTripleLayout.h; sourceTree = "<group>"; };
+		CE4A3E1A1CA2758700972066 /* RACollectionViewTripleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewTripleLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +155,10 @@
 		CE4A3E181CA274FC00972066 /* RACollectionViewReorderTripletLayout */ = {
 			isa = PBXGroup;
 			children = (
-				CE4A3E191CA2758700972066 /* RACollectionVIewDelegateTripleLayout.h */,
-				CE4A3E1A1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m */,
+				CE03A0741CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.h */,
+				CE03A0751CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m */,
+				CE4A3E191CA2758700972066 /* RACollectionViewTripleLayout.h */,
+				CE4A3E1A1CA2758700972066 /* RACollectionViewTripleLayout.m */,
 			);
 			path = RACollectionViewReorderTripletLayout;
 			sourceTree = "<group>";
@@ -290,7 +295,8 @@
 			files = (
 				CE4A3DEA1CA2374600972066 /* ViewController.m in Sources */,
 				CE4A3DE71CA2374600972066 /* AppDelegate.m in Sources */,
-				CE4A3E1B1CA2758700972066 /* RACollectionVIewDelegateTripleLayout.m in Sources */,
+				CE03A0761CA3844700E273B6 /* RACollectionViewReorderableTripletLayout.m in Sources */,
+				CE4A3E1B1CA2758700972066 /* RACollectionViewTripleLayout.m in Sources */,
 				CE4A3DE41CA2374600972066 /* main.m in Sources */,
 				CE4A3E171CA247A500972066 /* RAViewController.m in Sources */,
 			);

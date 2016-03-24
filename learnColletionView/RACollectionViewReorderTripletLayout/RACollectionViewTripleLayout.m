@@ -6,9 +6,9 @@
 //  Copyright © 2016年 JiuFang. All rights reserved.
 //
 
-#import "RACollectionVIewDelegateTripleLayout.h"
+#import "RACollectionViewTripleLayout.h"
 
-@interface RACollectionVIewDelegateTripleLayout()
+@interface RACollectionViewTripleLayout()
 
 @property (assign, nonatomic)NSInteger numbersOfCells;
 @property (assign, nonatomic)NSInteger numbersOfLines;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation RACollectionVIewDelegateTripleLayout
+@implementation RACollectionViewTripleLayout
 
 #pragma mark - Over ride flow layout methods
 
