@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RACollectionViewReorderableTripletLayout.h"
 
-@interface RAViewController : UIViewController
+@interface RAViewController : UIViewController <RACollectionViewDelegateReorderableTripletLayout, RACollectionViewReorderableTripletLayoutDataSource>
 
 @end

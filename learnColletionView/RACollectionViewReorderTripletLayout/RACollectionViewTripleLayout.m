@@ -101,7 +101,7 @@
     CGFloat lineOriginY = _largeCellSize.height * line + lineSpaceForIndexPath + _insets.top;
     CGFloat rightSideLargeCellOriginX = _collectionViewSize.width - _largeCellSize.width - _insets.right;
     CGFloat rightSideSmallCellOriginX = _collectionViewSize.width - _smallCellSize.width - _insets.right;
-    
+    /*
     if (indexPath.item == 0) {
         attribute.frame = CGRectMake(_insets.left, _insets.top, _largeCellSize.width, _largeCellSize.height);
     } else if (indexPath.item % 6 == 0) {
@@ -121,9 +121,9 @@
             attribute.frame = CGRectMake(_insets.left, lineOriginY + _smallCellSize.height + _itemSpacing, _smallCellSize.width, _smallCellSize.height);
         }
     }
-    
+    */
     if (indexPath.item % 6 == 0) {
-        attribute.frame = CGRectMake(_insets.left, _insets.top, _largeCellSize.width, _largeCellSize.height);
+        attribute.frame = CGRectMake(_insets.left, lineOriginY, _largeCellSize.width, _largeCellSize.height);
     } else if ((indexPath.item - 1) % 6 == 0) {
         attribute.frame = CGRectMake(rightSideSmallCellOriginX, lineOriginY, _smallCellSize.width, _smallCellSize.width);
     } else if ((indexPath.item - 2) % 6 == 0) {
@@ -131,9 +131,9 @@
     } else if ((indexPath.item - 3) % 6 == 0) {
         attribute.frame = CGRectMake(_insets.left, lineOriginY, _smallCellSize.width, _smallCellSize.height);
     } else if ((indexPath.item - 4) % 6 == 0) {
-        attribute.frame = CGRectMake(rightSideSmallCellOriginX, lineOriginY, _smallCellSize.width, _smallCellSize.width);
+        attribute.frame = CGRectMake(_insets.left, lineOriginY + _smallCellSize.height + _itemSpacing, _smallCellSize.width, _smallCellSize.width);
     } else {
-        attribute.frame = CGRectMake(rightSideSmallCellOriginX, lineOriginY + _smallCellSize.height + _itemSpacing, _smallCellSize.width, _smallCellSize.height);
+        attribute.frame = CGRectMake(rightSideLargeCellOriginX, lineOriginY, _largeCellSize.width, _largeCellSize.height);
     }
     
     return attribute;

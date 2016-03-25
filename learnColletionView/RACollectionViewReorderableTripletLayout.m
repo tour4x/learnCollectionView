@@ -83,9 +83,10 @@ typedef NS_ENUM(NSInteger, RAScrollDirction){
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes *attribute = [super layoutAttributesForItemAtIndexPath:indexPath];
-    if ([attribute.indexPath isEqual:_reorderingCellIndexPath]
-        ) {
-        attribute.hidden = YES;
+    if (attribute.representedElementCategory == UICollectionElementCategoryCell) {
+        if ([attribute.indexPath isEqual:_reorderingCellIndexPath]) {
+            attribute.hidden = YES;
+        }
     }
     
     return attribute;
@@ -97,7 +98,7 @@ typedef NS_ENUM(NSInteger, RAScrollDirction){
     
     if (!_setUped) {
         _longPressGerture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGesture:)];
-        _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture)];
+        _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
         _longPressGerture.delegate = self;
         _panGesture.delegate = self;
         for (UIGestureRecognizer *gestureRecognizer in self.collectionView.gestureRecognizers) {
@@ -165,15 +166,17 @@ typedef NS_ENUM(NSInteger, RAScrollDirction){
     [self moveItemIfNeeded];
 }
 
-- (void)handledLongPressGesture:(UILongPressGestureRecognizer *)longPress {
+- (void)handleLongPressGesture:(UILongPressGestureRecognizer *)longPress {
     
     switch (longPress.state) {
         case UIGestureRecognizerStateBegan: {
             //indexPath
             NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:[longPress locationInView:self.collectionView]];
             //can move
-            if (![self.datasource respondsToSelector:@selector(collectionView:canMoveItemAtIndexPath:)]) {
-                return;
+            if ([self.datasource respondsToSelector:@selector(collectionView:canMoveItemAtIndexPath:)]) {
+                if (![self.datasource collectionView:self.collectionView canMoveItemAtIndexPath:indexPath]) {
+                    return;
+                }
             }
             
             //will begin dragging

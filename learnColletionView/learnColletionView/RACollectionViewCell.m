@@ -15,8 +15,22 @@
     self = [super initWithCoder:coder];
     if (self) {
         _imageView = [[UIImageView alloc] init];
+        _imageView.contentMode = UIViewContentModeScaleToFill;
+      //  _imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+      
+        _imageView = [[UIImageView alloc] init];
         _imageView.contentMode = UIViewContentModeScaleAspectFill;
         _imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        
+        
     }
     return self;
 }
@@ -26,7 +40,7 @@
     if (highlighted) {
         _imageView.alpha = .7f;
     }else {
-        _imageView.alpha = .1f;
+        _imageView.alpha = 1.f;
     }
     
 }
